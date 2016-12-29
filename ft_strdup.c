@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*dup;
 	int		i;
@@ -14,13 +14,4 @@ char	*ft_strdup(char *src)
 	}
 	dup[i] = '\0';
 	return (dup);
-}
-
-#include <stdio.h>
-
-int		main(void)
-{
-	char	str[] = "abcd";
-	printf("%s\n", ft_strdup(str));
-	return (0);
 }
