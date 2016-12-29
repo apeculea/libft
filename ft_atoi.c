@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
@@ -26,10 +26,4 @@ int		ft_atoi(const char *str)
 		return (-aux);
 	else 
 		return (aux);
-}
-
-int		main(int argc, char **argv)
-{
-	printf("%d\n", ft_atoi(argv[1]));
-	return (0);
 }
