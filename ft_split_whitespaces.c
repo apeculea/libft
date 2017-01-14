@@ -1,3 +1,4 @@
+#include "libft.h"
 #include <stdlib.h>
 
 static int	nbwords(char *str)
@@ -43,7 +44,7 @@ char	**ft_split_whitespaces(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (str[i] != '\0')
+		if (s[i] != '\0')
 		{
 			tab[nrw] = (char*)malloc(sizeof(char*) * (nbwords(s) + 1));
 			j = 0;
